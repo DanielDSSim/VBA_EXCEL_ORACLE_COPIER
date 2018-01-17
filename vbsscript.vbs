@@ -9,21 +9,21 @@ for i=1 to row
 	shell.SendKeys "^c"
 	WScript.sleep 1000
 	shell.SendKeys "%{TAB}"
-	WScript.sleep 1000
+	WScript.sleep 5000
 	shell.SendKeys "^v"
 
 	for j=2 to col
-		WScript.sleep 1000
-		shell.SendKeys "{TAB}"
-		WScript.sleep 1000
-		shell.SendKeys "%{TAB}"
 		WScript.sleep 2000
+		shell.SendKeys "{TAB}"
+		WScript.sleep 2000
+		shell.SendKeys "%{TAB}"
+		WScript.sleep 5000
 		shell.SendKeys "{RIGHT}"
 		WScript.sleep 1000
 		shell.SendKeys "^c"
 		WScript.sleep 1000
 		shell.SendKeys "%{TAB}"
-		WScript.sleep 2000
+		WScript.sleep 5000
 		shell.SendKeys "^v"
 	next
 	shell.SendKeys "%{TAB}"
